@@ -20,7 +20,7 @@
   <body>
     <header>
       <!--Navbar, utilizando grid-->
-      <div class="grid grid-cols-3 px-16 w-screen h-20 border-b items-center">
+      <div class="grid grid-cols-3 px-16 w-screen h-20 border-b items-center fixed top-0 bg-white">
         <img src="././images/airbnb-logo.png" alt="" class="h-16 w-28" />
 
         <div
@@ -53,22 +53,211 @@
       </div>
 
       <!--Category bar-->
-      <div class="flex items-center">
-        <div class="flex items-center">
-          <div class="flex flex-col">
-            <img src="" alt="">
-            <p></p>
+      <div class="flex justify-center items-center h-24 space-x-5 top-20 fixed bg-white w-screen">
+        <div class="flex items-center justify-center space-x-10">
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 ">
+            <img src="./public/images/type1.jpeg" alt="" class="h-6 w-6" />
+            <p class="text-xs font-normal">Amazing Pools</p>
           </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type2.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Play</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type3.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Historical homes</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type4.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Countryside</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type5.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Surfing</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type6.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Farms</p>
+          </div>
+             <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type7.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Amazing views</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type8.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Rooms</p>
+          </div>
+             <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type9.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">LakeFront</p>
+          </div>
+             <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type10.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">BeachFront</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type11.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">OMG!</p>
+          </div>
+          <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2">
+          <img src="./public/images/type12.jpeg" alt="" class="h-6 w-6" />
+          <p class="text-xs font-normal">Golfing</p>
+          </div>
+        </div>
+        <span class="material-symbols-outlined pl-4" > arrow_circle_right </span>
+        <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+          <span class="material-symbols-outlined pl-2">sync_alt</span>
+          <p class="text-xs font-medium pr-2">Filters</p>
         </div>
       </div>
       <!--Price bar-->
+      <div class="flex justify-center mt-48">
+        <div class="flex justify-between items-center p-4 border rounded-xl w-[600px] h-16">
+          <div class="flex justify-start">
+            <p class="border-r-2 border-gray-100 pr-4 text-base font-medium ">Display total price</p>
+            <p class="pl-4 text-gray-400 text-base">Include all fees, before taxes</p>
+          </div>
+          <i class="fa-solid fa-toggle-off text-3xl"></i> <!-- Hace el icono más grande -->
+
+        </div>
+      </div>
     </header>
 
-    <main>
-      <!--Hotel-->
+    <!--main section-->
+    <main class="mt-14 mx-auto flex justify-center">
+  <div class="grid grid-cols-4 gap-10">
+        <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img1.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Rus, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 64 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 675€ night</p>
+        </div>
+
+                <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img2.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Baeza, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">4.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 32 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 6757€ night</p>
+        </div>
+
+              <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img3.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Úbeda, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">4.3</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 10 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 12€ night</p>
+        </div>
+
+              <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img4.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Rus, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 7898 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 67787€ night</p>
+        </div>
+              <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img1.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Rus, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 64 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 675€ night</p>
+        </div>
+              <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img2.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Baeza, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 1111 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 0€ night</p>
+        </div>
+              <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img3.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Úbeda, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 64 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 675€ night</p>
+        </div>
+              <div class="flex flex-col h-96 w-72">
+          <img src="./public/images/img1.jpg" alt="" class="w-72 h-64 rounded-xl" />
+          <div class="flex justify-between mt-2">
+            <p class="text-sm font-medium"> Rus, Jaén </p>
+            <div>
+              <i class="fa-solid fa-star"></i>
+            <p class="text-sm font-light">5.0</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400"> 64 kilometers away</p>
+          <p class="text-sm text-gray-400"> 30 Jul - 4 Aug</p>
+          <p class="text-sm font-medium mt-2"> 675€ night</p>
+        </div>
+      </div>
     </main>
 
-    <footer></footer>
+    <footer class="flex justify-between h-12 items-center px-10 fixed bottom-0 w-screen bg-white">
+      <div class="flex text-sm font-base space-x-2">
+        <p>2023 Airbnb, Inc.</p>`
+        <p>·</p>
+        <p>Privacy</p>
+        <p>·</p>
+        <p>Terms</p>
+        <p>·</p>
+        <p>Sitemap</p>
+        <p>·</p>
+        <p>Company details</p>
+        <p>·</p>
+        <p>Destinations </p>
+      </div>
+      <div class="flex space-x-4 text-sm font-medium">
+        <span class="material-symbols-outlined">Language</span>
+        <p>English (EN)</p>
+        <p> € EUR</p>
+        <p>Support & resources</p>
+
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
